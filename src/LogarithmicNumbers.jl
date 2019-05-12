@@ -7,14 +7,14 @@ module LogarithmicNumbers
 
 using Requires, Random
 
-import Base: exp, log, *, /, ^, inv, +, -, prod, sum, show, write, read, float, big, unsigned, signed, widen, typemin, typemax, zero, one, iszero, isone, isinf, isfinite, isnan, sign, signbit, abs, ==, <, ≤, cmp, nextfloat, prevfloat, rand, promote_rule
+import Base: exp, log, *, /, ^, inv, +, -, prod, sum, show, write, read, float, big, unsigned, signed, widen, typemin, typemax, zero, one, iszero, isone, isinf, isfinite, isnan, sign, signbit, abs, ==, <, ≤, cmp, isless, nextfloat, prevfloat, rand, promote_rule
 
 export AbstractLogarithmic, ULogarithmic, Logarithmic
 
 include("types.jl")
 include("constructors.jl")
+include("ulogarithmic.jl")
 include("logarithmic.jl")
-include("slogarithmic.jl")
 include("promotion.jl")
 include("arithmetic.jl")
 include("random.jl")
